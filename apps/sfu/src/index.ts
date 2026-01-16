@@ -34,7 +34,8 @@ type Room = {
   speaking: Set<string>; // producerId set
 };
 
-const PORT = 3001;
+const PORT = Number(process.env.PORT || 3001);
+
 const server = http.createServer();
 const wss = new WebSocketServer({ server });
 
@@ -629,5 +630,6 @@ function resetPeerMedia(peer: Client) {
     });
   });
 
-  server.listen(PORT, () => console.log(`[SFU] ws://localhost:${PORT}`));
+  server.listen(PORT, "0.0.0.0", () => console.log(`[SFU] listening on 0.0.0.0:${PORT}`));
+
 })();
