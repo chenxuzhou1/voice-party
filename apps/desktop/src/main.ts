@@ -26,7 +26,7 @@ const vuEl = document.getElementById("vu") as HTMLDivElement | null;
 const remoteAudio = document.getElementById("remote") as HTMLAudioElement | null;
 
 /** ===== 常量 ===== */
-const SFU_WS_URL = "ws://localhost:3001";
+const SFU_WS_URL = "wss://voice-party.onrender.com";
 
 // 断线重连参数
 const RECONNECT_MIN = 300;
