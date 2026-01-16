@@ -1,0 +1,18 @@
+# deps
+node_modules/
+.pnpm-store/
+.pnp.*
+# build
+dist/
+build/
+out/
+.release/
+# env
+.env
+.env.*
+# logs
+*.log
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

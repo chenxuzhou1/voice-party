@@ -1,0 +1,9 @@
+{
+  "name": "voice-party",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:sfu": "pnpm -C apps/sfu dev",
+    "dev:desktop": "pnpm -C apps/desktop dev"
+  }
+}
